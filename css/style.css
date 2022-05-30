@@ -249,6 +249,18 @@ ul, ol {
   line-height: 24px;
   color: #FFFFFF;
 }
+.header__navbar .item.active {
+  padding: 5px 25px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 108, 208, 0.2);
+          box-shadow: 0px 4px 20px rgba(0, 108, 208, 0.2);
+  border-radius: 4px;
+  color: #000000;
+}
+
+.header_mobile {
+  display: none;
+}
 
 .banner .slick-dots {
   bottom: 113px;
@@ -1570,6 +1582,10 @@ ul, ol {
 }
 
 @media screen and (max-width: 786px) {
+  .header_mobile {
+    display: block;
+  }
+
   .container {
     padding: 0 16px;
   }
