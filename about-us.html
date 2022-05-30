@@ -13,6 +13,20 @@
 </head>
 <body>
 
+    <div class="header_mobile">
+        <div class="container">
+            <div class="box">
+                <a href="#" class="logo">
+                    <img src="img/logo-white.svg" alt="">
+                </a>
+                <button class="burgir">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </div>
     <header class="header">
         <div class="header__top">
             <div class="container">
@@ -95,7 +109,7 @@
                 <div class="banner__wrap">
                     <div class="banner__block" style="background: url(img/banner2.png) no-repeat center / cover;">
                         <div class="container">
-                            <h2 class="title">Мы двигаем город</h2>
+                            <h2 class="title">Мы двигаем<br> город</h2>
                             <span class="line"></span>
                         </div>
                     </div>
@@ -683,7 +697,16 @@
             slidesToShow: 3,
             slidesToScroll: 1,
             arrows: true,
-            dots: true
+            dots: true,
+            responsive: [
+                {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    
+                }
+                }
+            ]
         });
     </script>
 </body>

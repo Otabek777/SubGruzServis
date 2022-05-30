@@ -4,3 +4,7 @@ $(".jobs__block .btn").click(function() {
 $(".jobs__modal_close").click(function() {
     $(".jobs__modal").removeClass('active');
 });
+$(".header_mobile .burgir").click(function() {
+    $(".header").toggleClass('active');
+    $(this).toggleClass('active');
+});
