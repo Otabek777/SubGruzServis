@@ -8,3 +8,6 @@ $(".header_mobile .burgir").click(function() {
     $(".header").toggleClass('active');
     $(this).toggleClass('active');
 });
+$(".footer__block h5").click(function() {
+    $(this).toggleClass('active');
+});
