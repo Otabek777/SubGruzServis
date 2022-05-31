@@ -2601,11 +2601,11 @@ ul, ol {
   }
 
   .banner_2 .banner__block {
-    background-position-x: -50px !important;
+    background: url(../img/banner-mobile1.png) no-repeat center/cover !important;
   }
 
   .banner_3 .banner__block {
-    background-position-x: -300px !important;
+    background: url(../img/banner-mobile2.png) no-repeat center/cover !important;
   }
 }
 @media screen and (max-width: 330px) {
