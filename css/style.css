@@ -641,10 +641,15 @@ ul, ol {
   display: none;
 }
 .reviews .slick-prev:hover, .reviews .slick-next:hover {
-  background: #FF9417;
+  background: #CCCCCC;
+  opacity: 0.9;
 }
-.reviews .slick-prev:active, .reviews .slick-next:active {
-  background: #FFD600;
+.reviews .slick-prev:focus, .reviews .slick-next:focus {
+  background: #FF721A;
+  opacity: 0.9;
+}
+.reviews .slick-prev:focus::after, .reviews .slick-next:focus::after {
+  border-color: #fff;
 }
 .reviews .slick-prev:hover::after, .reviews .slick-next:hover::after {
   border-color: #fff;
@@ -772,6 +777,13 @@ ul, ol {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 54px;
+}
+.crumbs a path {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.crumbs a:hover path {
+  fill: #FFD600;
 }
 .crumbs span {
   display: block;
@@ -1284,6 +1296,15 @@ ul, ol {
   font-size: 14px;
   line-height: 16px;
 }
+.jobs__modal_block .input input:focus {
+  border: 1px solid #FFD600;
+}
+.jobs__modal_block .input input:active {
+  border: 1px solid #00D33B;
+}
+.jobs__modal_block .input input:invalid {
+  border: 1px solid #E32525;
+}
 .jobs__modal_block .box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1316,9 +1337,17 @@ ul, ol {
   border-bottom: 1px dashed #FAFAFA;
   padding-bottom: 5px;
   margin-bottom: 24px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .jobs__modal_block .link svg {
   margin-right: 6px;
+}
+.jobs__modal_block .link:hover {
+  color: #FF9417;
+}
+.jobs__modal_block .link:hover path {
+  fill: #FF9417;
 }
 .jobs__modal_block .check {
   display: -webkit-box;
@@ -1341,6 +1370,9 @@ ul, ol {
 .jobs__modal_block .check label a {
   color: #FF6200;
 }
+.jobs__modal_block .check label a:hover {
+  text-decoration: underline;
+}
 .jobs__modal_block .btn {
   width: 184px;
   height: 50px;
@@ -1361,6 +1393,14 @@ ul, ol {
           justify-content: center;
   color: #FFFFFF;
   margin: 0 auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.jobs__modal_block .btn:hover {
+  background: #FF9417;
+}
+.jobs__modal_block .btn:focus {
+  background: #FFD600;
 }
 
 .jobs__box {
