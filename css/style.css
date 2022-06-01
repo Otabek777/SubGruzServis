@@ -108,9 +108,15 @@ ul, ol {
   font-size: 18px;
   line-height: 22px;
   color: #222222;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .header__email svg {
   margin-right: 7px;
+}
+
+.header__email:hover {
+  color: #FFD600;
 }
 
 .header__phone {
@@ -137,9 +143,14 @@ ul, ol {
   line-height: 22px;
   color: #333333;
   margin-left: 28px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .header__phone .tel svg {
   margin-right: 7px;
+}
+.header__phone .tel:hover {
+  color: #FFD600;
 }
 
 .header__soc {
@@ -158,6 +169,12 @@ ul, ol {
   width: 32px;
   height: 32px;
   margin: 12px 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.header__soc a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .header__call {
@@ -179,6 +196,12 @@ ul, ol {
   background: #FFD600;
   border-radius: 4px;
   margin-left: 28px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.header__call:hover {
+  background: #FF6200;
 }
 
 .header__bottom {
@@ -344,6 +367,11 @@ ul, ol {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.banner__block .btn:hover {
+  background: #FFD600;
 }
 
 .benefits_top {
@@ -422,6 +450,9 @@ ul, ol {
   line-height: 24px;
   color: #E96E3D;
   margin-left: auto;
+}
+.title_h2 a:hover {
+  text-decoration: underline;
 }
 
 .benefits__wrap {
@@ -809,6 +840,7 @@ ul, ol {
 }
 
 .news__block {
+  display: block;
   width: 255px;
   height: 446px;
   background: #FFFFFF;
@@ -817,6 +849,8 @@ ul, ol {
   margin-right: 30px;
   overflow: hidden;
   position: relative;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .news__block .date {
   background: #0867BB;
@@ -866,6 +900,11 @@ ul, ol {
   margin-right: 0;
 }
 
+.news__block:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
 .services {
   padding-top: 40px;
   padding-bottom: 140px;
@@ -912,9 +951,12 @@ ul, ol {
   height: 38px;
   font-weight: 400;
   font-size: 16px;
-  line-height: 145%;
+  line-height: 16px;
   color: #000000;
   margin-bottom: 3px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  padding-right: 20px;
 }
 .services__aside .item.active {
   background: #FF6200;
@@ -931,6 +973,12 @@ ul, ol {
   width: 26px;
   height: 26px;
   background: #FF6200;
+}
+.services__aside .item:hover {
+  color: #FFD600;
+}
+.services__aside .item.active:hover {
+  color: #fff;
 }
 
 .services__table {
@@ -1387,6 +1435,11 @@ ul, ol {
   background: #FF6200;
   border-radius: 4px;
   border: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.jobs__block .btn:hover {
+  background: #FFD600;
 }
 
 .contacts {
@@ -1508,6 +1561,12 @@ ul, ol {
   border-radius: 4px;
   border: 0;
   margin-bottom: 122px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.footer__call:hover {
+  background: #FFD600;
 }
 
 .footer__bottom {
@@ -1540,6 +1599,9 @@ ul, ol {
   color: #7B61FF;
   margin-bottom: 6px;
 }
+.footer__bottom .left .link:hover {
+  text-decoration: underline;
+}
 .footer__bottom .left p {
   font-weight: 400;
   font-size: 14px;
@@ -1548,6 +1610,9 @@ ul, ol {
 }
 .footer__bottom .left p a {
   color: #7B61FF;
+}
+.footer__bottom .left p a:hover {
+  text-decoration: underline;
 }
 .footer__bottom .right {
   display: -webkit-box;
@@ -1565,6 +1630,9 @@ ul, ol {
   line-height: 16px;
   color: #FFFFFF;
   margin: 5px 0;
+}
+.footer__bottom .right a:hover {
+  text-decoration: underline;
 }
 .footer__bottom .right img {
   margin-left: 22px;
@@ -1587,6 +1655,11 @@ ul, ol {
   line-height: 20px;
   color: #FFFFFF;
   margin-bottom: 16px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.footer__block .ul .item:hover {
+  color: #FFD600;
 }
 
 .footer__soc {
@@ -1610,6 +1683,12 @@ ul, ol {
       -ms-flex-pack: center;
           justify-content: center;
   margin-right: 12px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.footer__soc a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .footer__email {
