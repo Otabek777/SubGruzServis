@@ -201,6 +201,10 @@ ul, ol {
 }
 
 .header__call:hover {
+  background: #FF9417;
+}
+
+.header__call:focus {
   background: #FF6200;
 }
 
@@ -371,6 +375,9 @@ ul, ol {
   transition: all 0.3s ease;
 }
 .banner__block .btn:hover {
+  background: #FF9417;
+}
+.banner__block .btn:focus {
   background: #FFD600;
 }
 
@@ -450,9 +457,13 @@ ul, ol {
   line-height: 24px;
   color: #E96E3D;
   margin-left: auto;
+  text-decoration: underline;
 }
 .title_h2 a:hover {
-  text-decoration: underline;
+  color: #FF9417;
+}
+.title_h2 a:active {
+  color: #FFD600;
 }
 
 .benefits__wrap {
@@ -630,7 +641,10 @@ ul, ol {
   display: none;
 }
 .reviews .slick-prev:hover, .reviews .slick-next:hover {
-  background: #FF6200;
+  background: #FF9417;
+}
+.reviews .slick-prev:active, .reviews .slick-next:active {
+  background: #FFD600;
 }
 .reviews .slick-prev:hover::after, .reviews .slick-next:hover::after {
   border-color: #fff;
@@ -954,16 +968,16 @@ ul, ol {
   line-height: 16px;
   color: #000000;
   margin-bottom: 3px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
   padding-right: 20px;
+  position: relative;
 }
 .services__aside .item.active {
   background: #FF6200;
   color: #fff;
   position: relative;
 }
-.services__aside .item.active::after {
+.services__aside .item::after {
+  opacity: 0;
   content: "";
   position: absolute;
   top: 50%;
@@ -974,11 +988,22 @@ ul, ol {
   height: 26px;
   background: #FF6200;
 }
-.services__aside .item:hover {
-  color: #FFD600;
+.services__aside .item.active::after {
+  opacity: 1;
 }
-.services__aside .item.active:hover {
+.services__aside .item:hover {
+  background: #FF9417;
   color: #fff;
+}
+.services__aside .item:hover::after {
+  opacity: 1;
+  background: #FF9417;
+}
+.services__aside .item:active {
+  background: #FFD600;
+}
+.services__aside .item:active::after {
+  background: #FFD600;
 }
 
 .services__table {
@@ -1439,6 +1464,9 @@ ul, ol {
   transition: all 0.3s ease;
 }
 .jobs__block .btn:hover {
+  background: #FF9417;
+}
+.jobs__block .btn:focus {
   background: #FFD600;
 }
 
@@ -1566,6 +1594,10 @@ ul, ol {
 }
 
 .footer__call:hover {
+  background: #FF9417;
+}
+
+.footer__call:focus {
   background: #FFD600;
 }
 
